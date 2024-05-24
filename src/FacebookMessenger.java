@@ -1,4 +1,4 @@
-public class MSNMessenger {
+public class FacebookMessenger {
     public void enviarMensagem() {
         validarConectadoInternet(); //encapsulado
         System.out.println("Enviando mensagem pelo Facebook Messenger");

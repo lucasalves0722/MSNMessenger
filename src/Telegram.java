@@ -1,4 +1,4 @@
-public class MSNMessenger {
+public class Telegram {
     public void enviarMensagem() {
         validarConectadoInternet(); //encapsulado
         System.out.println("Enviando mensagem pelo Telegram");
