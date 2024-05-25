@@ -1,15 +1,16 @@
 public class PCUsuario {
     public static void main(String[] args) {
-        MSNMessenger msn = new MSNMessenger();
-        msn.enviarMensagem();
-        msn.receberMensagem();
+        ServicoMensagemInstantanea smi = null;
+        String appEscolhido = "facebook";
 
-        FacebookMessenger fcb = new FacebookMessenger();
-        fcb.enviarMensagem();
-        fcb.receberMensagem();
+        if (appEscolhido.equals("msn"))
+            smi = new MSNMessenger();
+        else if (appEscolhido.equals("facebook"))
+            smi = new FacebookMessenger();
+        else if (appEscolhido.equals("telegram"))
+            smi = new Telegram();
         
-        Telegram tlg = new Telegram();
-        tlg.enviarMensagem();
-        tlg.receberMensagem();
+        smi.enviarMensagem();
+        smi.receberMensagem();
     }
 }
